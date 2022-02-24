@@ -29,8 +29,9 @@ public class MainFormController {
         if(exitCode==0){
             Process java = Runtime.getRuntime().exec("java -cp " + tempDir + "JavaAppRunner");
             exitCode=java.waitFor();
+            
         }else{
-
+readStream(javac.getErrorStream());
         }
 
     }catch(IOException | InterruptedException e){

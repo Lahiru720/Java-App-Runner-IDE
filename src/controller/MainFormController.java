@@ -10,6 +10,7 @@ public class MainFormController {
     public TextArea txtOutput;
 
     public void btnRun_OnAction(ActionEvent event) {
+        String data = "public class DEP8IDEDemo{\n" + "public static void main(String args[]){\n" + txtEditor.getText() + "\n}\n" + "}";
 
     }
 }

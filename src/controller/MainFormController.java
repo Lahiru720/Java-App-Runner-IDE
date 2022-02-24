@@ -21,7 +21,11 @@ public class MainFormController {
         String tempDir = System.getProperty("java.io.tmpdir");
         Path tempFilePath = Paths.get(tempDir, "DEP8IDEDemo.java");
         Files.write(tempFilePath, data.getBytes());
-    }catch(IOException e){
+
+        Process javac = Runtime.getRuntime().exec("javac " + tempFilePath);
+        int exitCode = javac.waitFor();
+
+    }catch(IOException | InterruptedException e){
         e.printStackTrace();
     }
 

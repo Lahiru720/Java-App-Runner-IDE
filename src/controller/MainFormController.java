@@ -29,7 +29,7 @@ public class MainFormController {
             int exitCode = javac.waitFor();
 
             if (exitCode == 0) {
-                Process java = Runtime.getRuntime().exec("java -cp " + tempDir + " JavaAppRunner");
+                Process java = Runtime.getRuntime().exec("java -cp " + tempDir + "javaAppRunner");
                 exitCode = java.waitFor();
 
                 if (exitCode == 0) {

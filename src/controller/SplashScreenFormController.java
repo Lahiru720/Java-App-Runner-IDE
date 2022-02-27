@@ -29,7 +29,7 @@ public class SplashScreenFormController {
 
         new Thread(() -> {
             try {
-                Connection connection = establishDBConnection();
+//                Connection connection = establishDBConnection();
                 updateProgress("Stating the app", 1.0);
                 Thread.sleep(100);
 //                DBConnection.getInstance().init(connection);connection
@@ -62,32 +62,6 @@ public class SplashScreenFormController {
         }).start();
     }
 
-    private Connection establishDBConnection() throws Throwable {
-        try {
-            updateProgress("Establishing DB Connection", 0.2);
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connection = DriverManager.
-                    getConnection("jdbc:mysql://localhost:3306/dep8_hello", "root", "mysql");
-
-            updateProgress("Found an existing DB", 0.5);
-            Thread.sleep(100);
-
-            updateProgress("Setting up the connection", 0.8);
-            Thread.sleep(100);
-
-            return connection;
-        } catch (SQLException e) {
-            if (e.getSQLState().equals("42000")) {      // Unknown database
-                createDB();
-                return DriverManager.
-                        getConnection("jdbc:mysql://localhost:3306/dep8_hello", "root", "mysql");
-            } else {
-                updateProgress("Network failure", 0.8);
-                Thread.sleep(100);
-                throw new RuntimeException("Network failure");
-            }
-        }
-    }
 
     private void createDB() throws Throwable {
 
@@ -107,11 +81,6 @@ public class SplashScreenFormController {
         }
     }
 
-    private void updateProgress(String status, double value) {
-        Platform.runLater(() -> {
-            statusText.set(status);
-            progress.set(value);
-        });
-    }
+    
 
 }

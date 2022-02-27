@@ -65,22 +65,9 @@ public class SplashScreenFormController {
 
     private void createDB() throws Throwable {
 
-        updateProgress("Loading DB Script", 0.6);
-        try (InputStream is = this.getClass().getResourceAsStream("/assets/dbscript.sql");
-             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306?allowMultiQueries=true", "root", "mysql")) {
-
-            byte[] buffer = new byte[is.available()];
-            is.read(buffer);
-            String dbScript = new String(buffer);
-            Thread.sleep(100);
-
-            updateProgress("Executing DB Script", 0.8);
-            Statement stm = connection.createStatement();
-            stm.execute(dbScript);
-            Thread.sleep(100);
-        }
+       
     }
 
-    
+
 
 }

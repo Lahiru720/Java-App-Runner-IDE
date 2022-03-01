@@ -14,10 +14,11 @@ public class AppInitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        AnchorPane load = FXMLLoader.load(this.getClass().getResource("/view/SplashScreenForm.fxml"));
+        AnchorPane load = FXMLLoader.load(this.getClass().getResource("/view/MainForm.fxml"));
         Scene scene = new Scene(load);
         primaryStage.setScene(scene);
         primaryStage.show();
+        System.out.println("hi");
 //        primaryStage.setMaximized(true);
     }
 }

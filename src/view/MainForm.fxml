@@ -2,16 +2,15 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextArea?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
    <children>
-      <AnchorPane layoutX="10.0" layoutY="8.0" prefHeight="400.0" prefWidth="600.0">
+      <AnchorPane prefHeight="408.0" prefWidth="610.0" style="-fx-background-color: #394f4f;">
          <children>
-            <TextArea fx:id="txtOutput" layoutX="25.0" layoutY="287.0" prefHeight="86.0" prefWidth="552.0" />
-            <JFXTextArea fx:id="txtEditor" layoutX="7.0" layoutY="10.0" prefHeight="201.0" prefWidth="586.0" promptText="Your code Here !" />
+            <JFXTextArea fx:id="txtEditor" layoutX="7.0" layoutY="10.0" prefHeight="201.0" prefWidth="598.0" promptText="Your code Here !" style="-fx-background-color: #becccc;" />
             <JFXButton fx:id="btnRun" buttonType="RAISED" defaultButton="true" layoutX="222.0" layoutY="223.0" onAction="#btnRun_OnAction" prefHeight="52.0" prefWidth="158.0" style="-fx-background-color: #2db3af;" text="Run Code" />
+            <JFXTextArea fx:id="txtOutput" layoutX="4.0" layoutY="285.0" prefHeight="116.0" prefWidth="598.0" style="-fx-background-color: #becccc;" />
          </children>
       </AnchorPane>
    </children>

@@ -12,6 +12,7 @@
             <JFXButton fx:id="btnRun" buttonType="RAISED" defaultButton="true" layoutX="222.0" layoutY="223.0" onAction="#btnRun_OnAction" prefHeight="52.0" prefWidth="158.0" style="-fx-background-color: #2db3af;" text="Run Code" />
             <JFXTextArea fx:id="txtOutput" layoutX="4.0" layoutY="285.0" prefHeight="116.0" prefWidth="598.0" style="-fx-background-color: #becccc;" />
             <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="394.0" layoutY="223.0" onAction="#btnClear_OnAction" prefHeight="52.0" prefWidth="103.0" style="-fx-background-color: #e3f1f0;" text="Clear" />
+            <JFXButton fx:id="btnReRun" buttonType="RAISED" layoutX="104.0" layoutY="223.0" onAction="#btnReRun_OnAction" prefHeight="52.0" prefWidth="103.0" style="-fx-background-color: #e3f1f0;" text="Re-Run" />
          </children>
       </AnchorPane>
    </children>

@@ -19,6 +19,7 @@ public class MainFormController {
     public JFXTextArea txtEditor;
     public JFXButton btnRun;
     public JFXButton btnClear;
+    public JFXButton btnReRun;
 
     public void btnRun_OnAction(ActionEvent event) {
         try {
@@ -80,5 +81,9 @@ public class MainFormController {
     public void btnClear_OnAction(ActionEvent event) {
         txtEditor.setText("");
         txtOutput.setText("");
+    }
+
+    public void btnReRun_OnAction(ActionEvent event) {
+        btnRun.fire();
     }
 }

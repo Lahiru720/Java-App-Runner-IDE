@@ -22,6 +22,6 @@ public class AppInitializer extends Application {
         String css= this.getClass().getResource("style.css").toExternalForm();
         scene.getStylesheets().add(css);
 //        primaryStage.setMaximized(true);
-        
+
     }
 }

@@ -2,17 +2,20 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+<AnchorPane prefHeight="636.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
    <children>
-      <AnchorPane prefHeight="408.0" prefWidth="610.0" style="-fx-background-color: #394f4f;">
+      <AnchorPane prefHeight="641.0" prefWidth="797.0" style="-fx-background-color: #394f4f;" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <JFXTextArea fx:id="txtEditor" layoutX="7.0" layoutY="10.0" prefHeight="201.0" prefWidth="598.0" promptText="Your code Here !" style="-fx-background-color: #becccc;" />
-            <JFXButton fx:id="btnRun" buttonType="RAISED" defaultButton="true" layoutX="222.0" layoutY="223.0" onAction="#btnRun_OnAction" prefHeight="52.0" prefWidth="158.0" style="-fx-background-color: #2db3af;" text="Run Code" />
-            <JFXTextArea fx:id="txtOutput" layoutX="4.0" layoutY="285.0" prefHeight="116.0" prefWidth="598.0" style="-fx-background-color: #becccc;" />
-            <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="394.0" layoutY="223.0" onAction="#btnClear_OnAction" prefHeight="52.0" prefWidth="103.0" style="-fx-background-color: #e3f1f0;" text="Clear" />
-            <JFXButton fx:id="btnReRun" buttonType="RAISED" layoutX="104.0" layoutY="223.0" onAction="#btnReRun_OnAction" prefHeight="52.0" prefWidth="103.0" style="-fx-background-color: #e3f1f0;" text="Re-Run" />
+            <JFXTextArea fx:id="txtEditor" layoutX="7.0" layoutY="107.0" prefHeight="310.0" prefWidth="565.0" promptText="Your code Here !" style="-fx-background-color: #becccc;" />
+            <JFXButton fx:id="btnRun" buttonType="RAISED" defaultButton="true" layoutX="585.0" layoutY="107.0" onAction="#btnRun_OnAction" prefHeight="65.0" prefWidth="190.0" style="-fx-background-color: #2db3af;" text="Run Code" />
+            <JFXTextArea fx:id="txtOutput" layoutX="6.0" layoutY="449.0" prefHeight="172.0" prefWidth="785.0" style="-fx-background-color: #becccc;" />
+            <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="687.0" layoutY="179.0" onAction="#btnClear_OnAction" prefHeight="38.0" prefWidth="85.0" style="-fx-background-color: #e3f1f0;" text="Clear" />
+            <JFXButton fx:id="btnReRun" buttonType="RAISED" layoutX="589.0" layoutY="179.0" onAction="#btnReRun_OnAction" prefHeight="38.0" prefWidth="93.0" style="-fx-background-color: #e3f1f0;" text="Re-Run" />
+            <AnchorPane layoutX="-1.0" prefHeight="83.0" prefWidth="797.0" style="-fx-background-color: #6299ee;" />
+            <Separator layoutX="-1.0" layoutY="432.0" prefHeight="6.0" prefWidth="774.0" />
          </children>
       </AnchorPane>
    </children>
